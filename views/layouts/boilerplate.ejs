@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelp-Camp</title>
+    <link rel="stylesheet" href="/stylesheet/bootstrap.min.css">
+
+</head>
+<body class="d-flex flex-column vh-100">
+    <%- include('../partials/navbar') %>
+    <main class="container mt-4">
+        <%- include('../partials/flash') %>
+        <%- body %>
+    </main>
+
+    <%- include('../partials/footer') %>
+
+
+    <script src="/javascript/popper.min.js" ></script>
+<script src="/javascript/bootstrap.min.js" ></script>
+<script src="/validateForm.js"></script>
+</body>
+</html>

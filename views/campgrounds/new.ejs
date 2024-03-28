@@ -1,0 +1,48 @@
+<% layout('layouts/boilerplate') %>
+<div class="row">
+    <h1 class="text-center">New Campground</h1>
+    <div class="col-md-6 offset-md-3">
+        <form action="/campgrounds" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+            <div class="mb-3">
+            <label for="title" class="form-label"> Title Camp </label>
+            <input id="title" name="campground[title]" placeholder="new Camp" class="form-control" required />
+            <div class="valid-feedback">Look Good!</div>
+            </div>
+            <div class="mb-3">
+            <label for="location" class="form-label"> Locat Camp </label>
+            <input id="location" name="campground[location]" placeholder="example:new jersy,NewYork" class="form-control" required/>
+            <div class="valid-feedback">Look Good!</div>
+        </div>
+        <!-- <div class="mb-3">
+            <label for="image" class="form-label"> Image </label>
+            <input type="file" name="image" id="image" multiple />
+            <div class="valid-feedback">Look Good!</div>
+        </div> -->
+        <div class="mb-3">
+            <label for="price" class="form-label"> Price Per Night </label>
+            <div class="input-group">
+                <span class="input-group-text">$</span>
+            <input id="price" type="text" class="form-control" aria-label="price-label" placeholder="0.00"  name="campground[price]" required /> 
+            <div class="valid-feedback">Look Good!</div>
+            </div>
+          </div>
+        <div class="mb-3">
+            <label for="description" class="form-label"> Description </label>
+            <textarea id="description" name="campground[description]" class="form-control" required></textarea>
+            <div class="valid-feedback">Look Good!</div>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile02"></label>
+            <input type="file" class="form-control" id="inputGroupFile02" name="image" multiple />
+          </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success"> Add Campground</button>
+            <a href="/campgrounds" class="btn btn-warning">Cancel</a>
+        </div>
+        </form>
+        <hr />
+        
+    
+    </div>
+    </div>
+  
